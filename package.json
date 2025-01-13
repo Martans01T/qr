@@ -1,0 +1,9 @@
+{
+  "name": "validacion-empleados",
+  "version": "1.0.0",
+  "description": "Sistema de validación de carnets de empleados",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  }
+} 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Empleado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo de la empresa" class="logo">
+        </div>
+        
+        <div class="card">
+            <div class="loader" id="loader"></div>
+            
+            <div id="contenido" class="empleado-info" style="display: none;">
+                <img id="foto-empleado" src="" alt="Foto del empleado" class="foto-empleado">
+                <h2 id="nombre-empleado" class="nombre"></h2>
+                <div class="info-container">
+                    <p><strong>Cédula:</strong> <span id="cedula-empleado"></span></p>
+                    <p><strong>Fecha de Ingreso:</strong> <span id="fecha-ingreso"></span></p>
+                    <p><strong>Válido hasta:</strong> <span id="fecha-validez"></span></p>
+                </div>
+                <div id="estado-validacion" class="estado"></div>
+            </div>
+
+            <div id="error-mensaje" class="error" style="display: none;">
+                Empleado no encontrado o carnet no válido
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
